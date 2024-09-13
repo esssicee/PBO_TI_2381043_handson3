@@ -1,11 +1,16 @@
 public class whileloop {
-    public class  whileloop {
-        public static void main(String[] args) {
-            String[] kumpulanBuah = new String[] {"Aple","Pisang", "Mangga", "Jeruk"};
-            int counter = 0;
-            while (counter <  kumpulanBuah.length){
-                counter++;
+    public static void main(String[] args) {
+        int i = 1;
+        while (i <= 20) {
+            if (i % 3 == 0) {
+                i++;
+                continue;
             }
+            if (i > 15) {
+                break;
+            }
+            System.out.println("Nilai i : " + i);
+            i++;
         }
     }
 }
